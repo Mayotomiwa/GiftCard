@@ -3,13 +3,15 @@ import { saveAs } from 'file-saver';
 import { motion } from "framer-motion";
 import React, { useState } from "react";
 import { FaBackward } from 'react-icons/fa';
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { UnsplashImage } from "../../types/UnsplashImage";
 
 const fontOptions = ["Roboto", "Lobster", "Pacifico", "Grey Qo", "Montserrat"];
 
 const FontComponent: React.FC = () => {
   const location = useLocation();
+  const navigate = useNavigate();
+  
   const {
     selectedImage,
     celebrationText,
@@ -55,7 +57,8 @@ const FontComponent: React.FC = () => {
           .then((blob) => {
             saveAs(blob, "celebration_image.png");
             setIsLoading(false);
-            setIsDownloadModalOpen(false); // Close the modal after download
+            setIsDownloadModalOpen(false);
+            navigate('/download-component');
           })
           .catch((error) => {
             console.error("Oops, something went wrong!", error);
@@ -101,7 +104,7 @@ const FontComponent: React.FC = () => {
 
       <div className="text-center mb-4">
         <h3 className="text-lg font-semibold mb-2">Change Font</h3>
-        <div className="flex justify-center space-x-2">
+        <div className="grid grid-cols-2 gap-2 md:grid-cols-3 lg:grid-cols-5">
           {fontOptions.map((font) => (
             <button
               key={font}
