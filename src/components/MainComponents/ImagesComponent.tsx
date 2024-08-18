@@ -16,12 +16,10 @@ const ImagesComponent: React.FC = () => {
     try {
       setLoading(true);
       const data = await fetchImages(4);
-      setTimeout(() => {
-        setImages(data);
-        setLoading(false);
-      }, 3000); //delay for 3 seconds
+      setImages(data);
     } catch (err) {
       setError(`Failed to load images, ${err}`);
+    } finally {
       setLoading(false);
     }
   };
@@ -100,6 +98,7 @@ const ImagesComponent: React.FC = () => {
                 <img
                   src={image.urls.regular}
                   alt={image.alt_description || "Unsplash Image"}
+                  loading="lazy" // Enable lazy loading
                   className={`w-full h-60 object-cover rounded-md ${
                     selectedImage === image.id ? "opacity-75" : "opacity-100"
                   }`}
