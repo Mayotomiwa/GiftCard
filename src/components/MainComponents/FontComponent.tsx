@@ -138,17 +138,19 @@ const FontComponent: React.FC = () => {
         </div>
 
         <div className="flex items-center justify-center mt-10">
-          <button
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
             onClick={handleDone}
             className={`px-6 py-3 text-white rounded-lg transition duration-300 ease-in-out ${
               !selectedFont || !celebrationText || !personName
                 ? "bg-gray-400 cursor-not-allowed"
-                : "text-blue-500 hover:hover:bg-gray-100 transition duration-300 ease-in-out"
+                : "bg-white text-blue-500 hover:hover:bg-gray-100 transition duration-300 ease-in-out"
             }`}
             disabled={!selectedFont || !celebrationText || !personName}
           >
             Done
-          </button>
+          </motion.button>
         </div>
 
         {/* Confirmation Modal */}

@@ -22,12 +22,12 @@ const DownloadComponent: React.FC = () => {
           <p className="text-lg mb-6">
             Thank you for downloading. We hope you enjoy your content!
           </p>
-          <button
+          <motion.button
             onClick={handleGoHome}
-            className="px-6 py-3 bg-blue-600  rounded-lg shadow-md text-blue-500 hover:hover:bg-gray-100 transition duration-300 ease-in-out"
+            className="px-6 py-3 bg-white  rounded-lg shadow-md text-blue-500 hover:hover:bg-gray-100 transition duration-300 ease-in-out"
           >
             Go Home
-          </button>
+          </motion.button>
         </div>
       </motion.div>
     </div>

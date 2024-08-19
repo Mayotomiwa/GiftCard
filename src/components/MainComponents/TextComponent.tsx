@@ -66,17 +66,19 @@ const TextComponent: React.FC = () => {
         </div>
 
         <div className="flex items-center justify-center mt-10">
-          <button
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
             onClick={handleSubmit}
             className={`px-4 py-2 text-white rounded-md ${
               celebrationText && personName
-                ? "bg-blue-500 hover:bg-blue-700"
+                ? "bg-white text-blue-500 hover:hover:bg-gray-100 transition duration-300 ease-in-out"
                 : "bg-gray-400 cursor-not-allowed"
             }`}
             disabled={!celebrationText || !personName}
           >
             Continue
-          </button>
+          </motion.button>
         </div>
       </motion.div>
     </div>
