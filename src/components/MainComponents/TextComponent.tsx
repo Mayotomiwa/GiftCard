@@ -32,7 +32,7 @@ const TextComponent: React.FC = () => {
         transition={{ duration: 0.5, ease: "easeOut" }}
       >
         <FaBackward
-          className="absolute top-4 left-4 text-4xl p-2 text-blue-600 cursor-pointer hover:text-blue-800 transition-colors duration-300"
+          className="absolute top-4 left-4 text-4xl p-2 text-white cursor-pointer hover:text-blue-800 transition-colors duration-300"
           onClick={() => window.history.back()}
         />
         <div className="flex justify-center mb-4">
