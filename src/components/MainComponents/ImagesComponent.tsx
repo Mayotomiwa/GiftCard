@@ -110,7 +110,7 @@ const ImagesComponent: React.FC = () => {
 
             {/* Display selected image's photographer name below the grid */}
             {selectedImageName && (
-              <div className="text-center mt-4">
+              <div className="text-center text-white mt-4">
                 <p className="text-sm">Selected Image by {selectedImageName}</p>
               </div>
             )}
