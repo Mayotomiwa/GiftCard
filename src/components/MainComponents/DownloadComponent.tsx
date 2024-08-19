@@ -6,7 +6,7 @@ const DownloadComponent: React.FC = () => {
   const navigate = useNavigate();
 
   const handleGoHome = () => {
-    navigate("/home");
+    navigate("/home-component");
   };
 
   return (
