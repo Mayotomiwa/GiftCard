@@ -143,7 +143,7 @@ const FontComponent: React.FC = () => {
             className={`px-6 py-3 text-white rounded-lg transition duration-300 ease-in-out ${
               !selectedFont || !celebrationText || !personName
                 ? "bg-gray-400 cursor-not-allowed"
-                : "bg-blue-600 hover:bg-blue-700"
+                : "text-blue-500 hover:hover:bg-gray-100 transition duration-300 ease-in-out"
             }`}
             disabled={!selectedFont || !celebrationText || !personName}
           >

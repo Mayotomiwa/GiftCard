@@ -24,7 +24,7 @@ const DownloadComponent: React.FC = () => {
           </p>
           <button
             onClick={handleGoHome}
-            className="px-6 py-3 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-700 transition duration-300"
+            className="px-6 py-3 bg-blue-600  rounded-lg shadow-md text-blue-500 hover:hover:bg-gray-100 transition duration-300 ease-in-out"
           >
             Go Home
           </button>
