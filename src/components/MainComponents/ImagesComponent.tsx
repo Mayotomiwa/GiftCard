@@ -47,7 +47,7 @@ const ImagesComponent: React.FC = () => {
     ?.user.name;
 
   return (
-    <div className=" flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-blue-500 to-purple-600 text-white">
+    <div className=" flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-blue-500 to-purple-600">
       <motion.div
         className="p-4"
         initial={{ opacity: 0, x: -100 }}

@@ -24,7 +24,7 @@ const TextComponent: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-blue-500 to-purple-600 text-white">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-blue-500 to-purple-600">
       <motion.div
         className="p-4"
         initial={{ opacity: 0, x: -100 }}
@@ -61,7 +61,7 @@ const TextComponent: React.FC = () => {
             placeholder="Enter Name of the Person"
             value={personName}
             onChange={(e) => setPersonName(e.target.value)}
-            className="px-4 py-2 border border-gray-300 rounded-md w-full max-w-md"
+            className="px-4 py-2 border border-gray-300 rounded-md w-full max-w-md hover:border-purple-500"
           />
         </div>
 

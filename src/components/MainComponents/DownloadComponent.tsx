@@ -10,9 +10,9 @@ const DownloadComponent: React.FC = () => {
   };
 
   return (
-    <div className=" flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-blue-500 to-purple-600 text-white">
+    <div className=" flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-blue-500 to-purple-600">
       <motion.div
-        className="flex flex-col items-center justify-center h-screen p-4 bg-gray-100"
+        className="flex flex-col items-center justify-center h-screen p-4"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, ease: "easeOut" }}
