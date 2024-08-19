@@ -23,8 +23,10 @@ const DownloadComponent: React.FC = () => {
             Thank you for downloading. We hope you enjoy your content!
           </p>
           <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
             onClick={handleGoHome}
-            className="px-6 py-3 bg-white  rounded-lg shadow-md text-blue-500 hover:bg-gray-100 transition duration-300 ease-in-out"
+            className="px-6 py-3 bg-white text-blue-500 font-semibold rounded-lg shadow-lg hover:bg-gray-100 transition duration-300 ease-in-out"
           >
             Go Home
           </motion.button>

@@ -72,7 +72,7 @@ const TextComponent: React.FC = () => {
             onClick={handleSubmit}
             className={`px-4 py-2 text-white rounded-md ${
               celebrationText && personName
-                ? "bg-white text-blue-500 hover:hover:bg-gray-100 transition duration-300 ease-in-out"
+                ? "bg-white text-blue-500 font-semibold rounded-lg shadow-lg hover:bg-gray-100 transition duration-300 ease-in-out"
                 : "bg-gray-400 cursor-not-allowed"
             }`}
             disabled={!celebrationText || !personName}
